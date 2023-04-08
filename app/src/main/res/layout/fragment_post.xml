@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostFragment"
+    android:background="@color/app_color"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/each_post_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/sfprodisplay"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:text="Experts: Taliban’s “megaproject” could leave all of Central Asia without water" />
+
+            <TextView
+                android:id="@+id/each_post_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/calendar"
+                android:textColor="#8F8F8F"
+                android:text="  17:53 / 28.03.2023" />
+
+            <TextView
+                android:id="@+id/each_t_beginning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Afghanistan is actively implementing a project to build a giant canal “Kushtepa” in the province of Balkh on the border with Turkmenistan. The start of its construction was announced a year ago."
+                android:textColor="#fff"
+                android:fontFamily="@font/sfprodisplay"/>
+
+            <ImageView
+                android:id="@+id/each_post_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/post1img" />
+
+            <TextView
+                android:id="@+id/each_post_t_par1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="According to experts from the Center for the Study of Socio-Political Processes in the Post-Soviet Space of Moscow State University, the length of the new canal should be 285 km, width – 100 meters, depth – 8.5 meters. The canal originates from the Amu Darya in the Kaldar district, Balkh province. The water for the canal will be taken from the same river. The capacity of the channel will be 650 cubic meters per second." />
+
+        <TextView
+            android:id="@+id/each_post_t_par2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="The project is being implemented by the national development company, construction is carried out at the expense of public funds. The estimated cost of the project is about $684 million." />
+
+        <TextView
+            android:id="@+id/each_post_t_par3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="According to the plan of the developers, the canal will irrigate 3 million jeribs of land (1 jerib - 2,000 square meters) in the provinces of Balkh, Jawzjan and Faryab and provide employment for about 250,000 people. The Taliban believe that the project will help water dry regions, which will give impetus to the development of agriculture. Now more than 6,000 people have been involved in the construction of the canal." />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

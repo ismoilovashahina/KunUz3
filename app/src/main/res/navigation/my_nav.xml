@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/kunUzMainFragment">
+
+    <fragment
+        android:id="@+id/kunUzMainFragment"
+        android:name="com.example.kunuz3.KunUzMainFragment"
+        android:label="fragment_kun_uz_main"
+        tools:layout="@layout/fragment_kun_uz_main" >
+        <action
+            android:id="@+id/action_kunUzMainFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.kunuz3.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_kunUzMainFragment"
+            app:destination="@id/kunUzMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.kunuz3.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" />
+</navigation>
