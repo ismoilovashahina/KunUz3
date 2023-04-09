@@ -13,6 +13,11 @@ class PostsAdapter(var posts:MutableList<Post>, var forPostClick: ForPostClick) 
             var p_text = binding.postT
     }
 
+    fun setFilteredList(mList: MutableList<Post>){
+        this.posts = mList
+        notifyDataSetChanged()
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostHolder {
         return PostHolder(PostViewBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }

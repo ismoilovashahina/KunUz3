@@ -33,7 +33,7 @@
              android:layout_height="wrap_content"
              android:layout_gravity="center"
              android:gravity="center"
-             android:layout_weight="2.6">
+             android:layout_weight="1">
             
             <TextView
                 android:layout_width="wrap_content"
@@ -59,15 +59,24 @@
 
             
          </LinearLayout>
-             
-         
-         
-         <ImageView
-             android:id="@+id/imageView"
+         <com.google.android.material.card.MaterialCardView
+             android:id="@+id/materialCardView"
              android:layout_width="0dp"
              android:layout_height="match_parent"
-             android:layout_weight="0.2"
-             android:src="@drawable/ic_baseline_search_24" />
+             android:layout_weight="1.8"
+             app:cardCornerRadius="8dp"
+             app:cardElevation="12dp"
+             app:cardUseCompatPadding="true">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="Search here ..." />
+
+         </com.google.android.material.card.MaterialCardView>
 
       </LinearLayout>
 
@@ -131,7 +140,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-
+          android:layout_marginTop="30dp"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/main_title"
           tools:listitem="@layout/post_view" />
